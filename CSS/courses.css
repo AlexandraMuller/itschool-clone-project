@@ -1,0 +1,129 @@
+/* TITLU */
+
+.welcome {
+  background-color: var(--bg-primary);
+
+  height: 50vh;
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* DESCRIERE */
+
+.courses {
+  max-width: 1200px;
+  min-width: 320px;
+  margin: auto;
+  padding: var(--spacing-medium);
+  
+}
+
+.courses h2, .description-p {
+  text-align: center;
+  margin-bottom: var(--spacing-large);
+}
+
+.courses-bold {
+  font-weight: bold;
+}
+
+/* LISTA CURSURI */
+
+.courses .courses-container {
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+.courses-container .courses-list {
+  padding-left: var(--spacing-small);
+  padding-right: var(--spacing-small);
+  
+  width: calc(100% / 3);
+ 
+}
+
+.courses-container .course {
+  width: 100%;
+  padding: var(--spacing-tiny);
+
+  border: 1px solid rgb(189, 186, 186);
+  border-radius: 5px;
+
+  margin-bottom: var(--spacing-small);
+}
+
+.course-image {
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.description h3 {
+  color: var(--text-primary);
+  margin-bottom: 20px;
+}
+
+.courses-container .description img {
+  width: 80px;
+  height: auto;
+  vertical-align: middle;
+  padding-left: var(--spacing-tiny);
+}
+
+.courses-container .description {
+  padding: 10px;
+}
+
+.courses-container .description p, .courses-container .details {
+  margin-bottom: 20px;
+}
+
+.description p {
+  color: rgb(101, 101, 101) ;
+}
+
+.details span {
+  font-size: var(--fs-medium);
+  color: rgb(101, 101, 101);
+
+  padding: 2px;
+}
+
+.courses-container .material-symbols-outlined {
+  vertical-align: middle;
+}
+
+/* BUTONUL */
+
+.courses-container .description a {
+  background-color: var(--button-color);
+  color: var(--text-white);
+
+  text-align: center;
+  font-size: var(--fs-medium);
+
+  width: 100px;
+  padding: 5px;
+
+  border: 1px solid var(--button-color);
+  border-radius: 5px;
+
+}
+
+/* Pentru mobil si tableta*/
+
+@media (max-width: 992px) {
+  .courses-container .courses-list {
+    width: 50%;
+  }
+}
+
+@media (max-width: 768px) {
+  .courses-container .courses-list {
+    width: 100%;
+  }
+}

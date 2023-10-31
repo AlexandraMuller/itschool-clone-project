@@ -1,0 +1,160 @@
+/* TITLU */
+
+.welcome {
+  background-color: var(--bg-primary);
+
+  height: 50vh;
+  width: 100%;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+/* DESCRIERE */
+
+.contact {
+  max-width: 1200px;
+  min-width: 320px;
+  margin: auto;
+  padding: var(--spacing-medium);
+  
+}
+
+.contact h2 {
+  text-align: center;
+  margin-bottom: var(--spacing-large);
+}
+
+.description {
+  margin-bottom: var(--spacing-large);
+}
+
+/* SECTIUNEA DE CONTACT + FORMULAR */
+
+.contact-info {
+  display: flex;
+}
+
+/* INFORMATII ITSCHOOL (PARTEA DIN STANGA) */
+
+.contact-info ul {
+  display: flex;
+  flex-direction: column;
+
+  width: 50%;
+  padding: var(--spacing-medium);
+ 
+}
+
+.contact-info li {
+  display: flex;
+  justify-content: space-between;
+
+  margin-bottom: var(--spacing-large);
+  border-bottom: 1px solid lightgray;
+}
+
+
+.contact-icon {
+  vertical-align: middle;
+  /* margin-bottom: var(--spacing-small); */
+  padding: 5px;
+  
+}
+
+.contact-info a {
+  text-decoration: none;
+  color: gray;
+  font-size: var(--fs-medium);
+
+}
+
+.contact-info a:hover {
+  color: var(--text-dark);
+}
+.info {
+  color: gray;
+}
+
+/* FORMULAR (PARTEA DIN DREAPTA) */
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+
+  width: 50%;
+  padding: var(--spacing-medium);
+}
+
+.contact-form input, .contact-form textarea {
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+
+  margin-bottom: var(--spacing-medium);
+  padding: var(--spacing-small);
+}
+
+.contact-form label, .contact-form input, .contact-form textarea {
+  color: var(--text-dark);
+  font-size: var(--fs-medium);
+}
+
+#form-button {
+  text-align: center;
+  padding: var(--spacing-small);
+
+  color: var(--text-white);
+  background-color: var(--button-color);
+
+  border: 1px solid var(--button-color);
+  border-radius: 5px;
+
+  width: 100px;
+}
+
+.contact-form input:focus {
+  outline: none;
+  border-color: rgb(54, 54, 54)
+}
+
+.contact-form textarea:focus {
+  outline: none;
+  border-color: rgb(54, 54, 54)
+}
+
+/* PENTRU MOBIL */
+
+@media (max-width: 768px) {
+  .welcome h1 {
+   font-size: 32px;
+  }
+
+  .contact, .contact-info {
+   flex-direction: column;
+  }
+
+  .contact-info ul, .contact-info form {
+   width: 100%;
+   padding: 0;
+  }
+
+  .contact li {
+   margin-bottom: var(--spacing-medium);
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

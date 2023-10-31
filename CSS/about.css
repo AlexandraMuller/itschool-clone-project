@@ -1,0 +1,107 @@
+/* TITLU */
+.welcome {
+  background-color: var(--bg-primary);
+
+  height: 50vh;
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* LISTA TRAINERI */
+
+.trainers .trainers-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+.trainers .trainers-list {
+  width: calc(100% / 4);
+  
+
+  padding-left: var(--spacing-tiny);
+  padding-right: var(--spacing-tiny);
+}
+
+.trainers .trainer {
+  width: 100%;
+  min-height: 350px;
+
+  border: 1px solid rgb(189, 186, 186);
+  border-radius: 5px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding: 10px;
+
+  margin-top: 50px;
+
+}
+
+/* imagine traineri */
+.trainer-image {
+  width: 150px;
+  height: 150px;
+
+  margin-top: -50px;
+  border-radius: 50%;
+
+  overflow: hidden;
+
+}
+
+.trainer img {
+  width: 100%;
+  height: auto;
+  filter: grayscale(1);
+}
+
+.trainer img:hover {
+  filter: grayscale(0);
+}
+
+/* nume traineri */
+.trainer h3 {
+  font-size: var(--fs-large);
+  font-weight: 400;
+  text-align: center;
+  background-color: var(--bg-primary);
+  opacity: 0.9;
+
+  width: 100%;
+  padding: 5px;
+
+  border-radius: 5px;
+
+  margin-top: -25px;
+  margin-bottom: 10px;
+  
+  z-index: 1;
+}
+
+/* pentru mobil si tableta */
+
+@media (max-width: 992px) {
+  .trainers .trainers-list {
+    width: calc(100% / 3)
+  }
+}
+
+@media (max-width: 768px) {
+  .trainers .trainers-list {
+    width: 50%;
+  }
+}
+
+@media (max-width: 576px) {
+  .trainers .trainers-list {
+    width: 100%;
+  }
+}
+
+

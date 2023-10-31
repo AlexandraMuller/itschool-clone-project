@@ -1,1 +1,0 @@
-# itschool-clone-project
